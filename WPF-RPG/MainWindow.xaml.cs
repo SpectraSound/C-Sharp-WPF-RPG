@@ -31,5 +31,10 @@ namespace WPF_RPG
 
             DataContext = _gameSession;
         }
+
+        private void Button_Click_Add_EXP(object sender, RoutedEventArgs e)
+        {
+            _gameSession.CurrentPlayer.EXP = _gameSession.CurrentPlayer.EXP + 10;
+        }
     }
 }
